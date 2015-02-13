@@ -1,0 +1,153 @@
+﻿<Window x:Class="mark.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" WindowStartupLocation="CenterScreen" Width="600" Height="600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="253*"/>
+            <ColumnDefinition Width="234*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="703*"/>
+            <RowDefinition Height="225*"/>
+        </Grid.RowDefinitions>
+        <Viewbox Margin="0" Grid.RowSpan="2" Grid.ColumnSpan="2">
+            <Grid HorizontalAlignment="Left" Height="859.15" VerticalAlignment="Top" Width="914">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="331"/>
+                </Grid.RowDefinitions>
+                <Image x:Name="background" Source="background.jpg" Margin="10,20,-10,0" VerticalAlignment="Top" Height="531" Grid.RowSpan="2"/>
+                <Rectangle Fill="#00F4F4F5" HorizontalAlignment="Left" Height="100" Margin="37,104,0,0" Stroke="Black" VerticalAlignment="Top" Width="100" RenderTransformOrigin="-0.049,0.565">
+                    <Rectangle.ContextMenu>
+                        <ContextMenu x:Name="numberSumer"/>
+                    </Rectangle.ContextMenu>
+                </Rectangle>
+                <Rectangle Fill="#00F4F4F5" HorizontalAlignment="Left" Height="100" Margin="37,254,0,0" Stroke="Black" VerticalAlignment="Top" Width="100" MouseLeftButtonDown="Rectangle_MouseLeftButtonDown">
+                    <Rectangle.ContextMenu>
+                        <ContextMenu>
+                            <MenuItem  x:Name="dooropen" Header="Opened" IsCheckable="True" Checked="checkcheck"/>
+                        </ContextMenu>
+                    </Rectangle.ContextMenu>
+                </Rectangle>
+                <Rectangle Fill="#00F4F4F5" HorizontalAlignment="Left" Height="100" Margin="209.711,77.725,0,0" Stroke="Black" VerticalAlignment="Top" Width="100" MouseLeftButtonDown="Rectangle_MouseLeftButtonDown">
+                    <Rectangle.ContextMenu>
+                        <ContextMenu>
+                            <MenuItem  x:Name="search1" Header="moved" IsCheckable="True" Checked="checkcheck"/>
+                            <MenuItem  x:Name="search2" Header="moved-right-getter" IsCheckable="True" Checked="checkcheck" />
+                        </ContextMenu>
+                    </Rectangle.ContextMenu>
+                </Rectangle>
+                <Rectangle Fill="#00F4F4F5" HorizontalAlignment="Left" Height="100" Margin="345.068,204,0,0" Stroke="Black" VerticalAlignment="Top" Width="100" MouseLeftButtonDown="Rectangle_MouseLeftButtonDown">
+                    <Rectangle.ContextMenu>
+                        <ContextMenu>
+                            <MenuItem  x:Name="shoot1" Header="shoot" IsCheckable="True" Checked="checkcheck"/>
+                            <MenuItem  x:Name="shoot2" Header="shoot-in" IsCheckable="True" Checked="checkcheck"/>
+                        </ContextMenu>
+                    </Rectangle.ContextMenu>
+                </Rectangle>
+                <Rectangle Fill="#00F4F4F5" HorizontalAlignment="Left" Height="100" Margin="282,343,0,0" Stroke="Black" VerticalAlignment="Top" Width="100" MouseLeftButtonDown="Rectangle_MouseLeftButtonDown">
+                    <Rectangle.ContextMenu>
+                        <ContextMenu>
+                            <MenuItem  x:Name="route" Header="finushed" IsCheckable="True" Checked="checkcheck"/>
+                        </ContextMenu>
+                    </Rectangle.ContextMenu>
+                </Rectangle>
+                <Rectangle Fill="#00F4F4F5" HorizontalAlignment="Left" Height="100" Margin="445.5,339.5,0,0" Stroke="Black" VerticalAlignment="Top" Width="100" MouseLeftButtonDown="Rectangle_MouseLeftButtonDown">
+                    <Rectangle.ContextMenu>
+                        <ContextMenu>
+                            <MenuItem  x:Name="pencent1" Header="pull" IsCheckable="True" Checked="checkcheck"/>
+                        </ContextMenu>
+                    </Rectangle.ContextMenu>
+                </Rectangle>
+                <Rectangle Fill="#00F4F4F5" HorizontalAlignment="Left" Height="100" Margin="588.5,411.5,0,0" Stroke="Black" VerticalAlignment="Top" Width="100" MouseLeftButtonDown="Rectangle_MouseLeftButtonDown">
+                    <Rectangle.ContextMenu>
+                        <ContextMenu>
+                            <MenuItem  x:Name="cloud" Header="finished" IsCheckable="True" Checked="checkcheck"/>
+                        </ContextMenu>
+                    </Rectangle.ContextMenu>
+                </Rectangle>
+                <Rectangle Fill="#00F4F4F5" HorizontalAlignment="Left" Height="55" Margin="803.087,399.5,0,0" Stroke="Black" VerticalAlignment="Top" Width="59.5" MouseLeftButtonDown="Rectangle_MouseLeftButtonDown">
+                    <Rectangle.ContextMenu>
+                        <ContextMenu>
+                            <MenuItem  x:Name="commStudy" Header="get-it" IsCheckable="True" Checked="checkcheck"/>
+                        </ContextMenu>
+                    </Rectangle.ContextMenu>
+                </Rectangle>
+                <Rectangle Fill="#00F4F4F5" HorizontalAlignment="Left" Height="55" Margin="801.087,338,0,0" Stroke="Black" VerticalAlignment="Top" Width="59.5" MouseLeftButtonDown="Rectangle_MouseLeftButtonDown">
+                    <Rectangle.ContextMenu>
+                        <ContextMenu>
+                            <MenuItem  x:Name="out1" Header="out" IsCheckable="True" Checked="checkcheck"/>
+                            <MenuItem  x:Name="out2" Header="out-in-right-way" IsCheckable="True" Checked="checkcheck"/>
+                        </ContextMenu>
+                    </Rectangle.ContextMenu>
+                </Rectangle>
+                <Rectangle Fill="#00F4F4F5" HorizontalAlignment="Left" Height="55" Margin="725,278,0,0" Stroke="Black" VerticalAlignment="Top" Width="59.5">
+                    <Rectangle.ContextMenu>
+                        <ContextMenu>
+                            <MenuItem  x:Name="remote" Header="完成" IsCheckable="True" Checked="checkcheck"/>
+                          
+                        </ContextMenu>
+                    </Rectangle.ContextMenu>
+                </Rectangle>
+                <Rectangle Fill="#00F4F4F5" HorizontalAlignment="Left" Height="100" Margin="542.703,204,0,0" Stroke="Black" VerticalAlignment="Top" MouseLeftButtonDown="Rectangle_MouseLeftButtonDown" Width="100">
+                    <Rectangle.ContextMenu>
+                        <ContextMenu>
+                            <MenuItem  x:Name="block1" Header="block-in" IsCheckable="True" Checked="checkcheck"/>
+                            <MenuItem  x:Name="block2" Header="block-in-get-it" IsCheckable="True" Checked="checkcheck"/>
+                        </ContextMenu>
+                    </Rectangle.ContextMenu>
+                </Rectangle>
+                <Rectangle Fill="#00F4F4F5" HorizontalAlignment="Left" Height="100" Margin="725,173,0,0" Stroke="Black" VerticalAlignment="Top" Width="100" MouseLeftButtonDown="Rectangle_MouseLeftButtonDown" RenderTransformOrigin="0.371,0.475">
+                    <Rectangle.ContextMenu>
+                        <ContextMenu>
+                            <MenuItem  x:Name="rightSenser" Header="finished" IsCheckable="True" Checked="checkcheck"/>
+                        </ContextMenu>
+                    </Rectangle.ContextMenu>
+                </Rectangle>
+                <StackPanel HorizontalAlignment="Left" Height="118.768" Margin="47,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="367">
+                    <Label Content="挂载个数" FontSize="25"/>
+                    <Slider x:Name="summer" Height="34.891" Delay="8" Interval="1" IsMoveToPointEnabled="True" IsSelectionRangeEnabled="True" IsSnapToTickEnabled="True" Maximum="8" ValueChanged="summer_ValueChanged"/>
+                    <Label x:Name="summer_show" Content="0" HorizontalAlignment="Right" FontSize="25"/>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Left" Height="118.768" Margin="468.156,10,0,0" VerticalAlignment="Top" Width="367" Grid.Row="1">
+                    <Label Content="约见" FontSize="25"/>
+                    <Slider x:Name="percenter" Height="34.891" Maximum="100" SmallChange="1" ValueChanged="percenter_ValueChanged" IsMoveToPointEnabled="True" IsSelectionRangeEnabled="True" IsSnapToTickEnabled="True"/>
+                    <Label x:Name="percent_show" Content="0" HorizontalAlignment="Right" FontSize="25"/>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Left" Height="168.503" Margin="47,133.768,0,0" Grid.Row="1" VerticalAlignment="Top" Width="190.581">
+                    <Label Content="反向工程" FontSize="20"/>
+                    <TextBox x:Name="number1" Height="40.83" TextWrapping="Wrap" Text="45" FontSize="25"/>
+                    <Label Content="拜师学艺" Height="32.507" FontSize="20"/>
+                    <TextBox x:Name="number2" Height="40.83" TextWrapping="Wrap" Text="35" FontSize="25"/>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Left" Height="119.076" Margin="331.068,147.497,0,0" Grid.Row="1" VerticalAlignment="Top" Width="555.333" Orientation="Horizontal">
+                    <StackPanel Margin="0,0.139,0,-0.982" Width="264.759" RenderTransformOrigin="0.5,0.5">
+                        <StackPanel.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleY="-0.387"/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="-1.401"/>
+                            </TransformGroup>
+                        </StackPanel.RenderTransform>
+                        <Label Content="基本得分" FontSize="25"/>
+                        <Label x:Name="baseMark" Content="0" FontSize="45"/>
+                    </StackPanel>
+                    <StackPanel Margin="0,0,0,-0.076" Width="302.78">
+                        <Label Content="加成得分" FontSize="25" Margin="0"/>
+                        <Label x:Name="mark" Content="0" FontSize="45" Margin="0"/>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Left" Height="61.404" Margin="313.425,254.005,0,0" Grid.Row="1" VerticalAlignment="Top" Width="584.213" Orientation="Horizontal" >
+                    <Button x:Name="calcBtn" Content="计算分数" Width="100" FontSize="18" Margin="20,0,0,0" Click="calcBtn_Click"/>
+                    <Button x:Name="restartBtn" Content="重置" Width="100" FontSize="18" Margin="20,0,0,0" Click="restartBtn_Click"/>
+                    <Button x:Name="timestartBtn" Content="开始计时" Width="100" FontSize="18" Margin="20,0,0,0" Click="timestartBtn_Click"/>
+                    <Button x:Name="stopBtn" Content="结束计时" Width="100" FontSize="18" Margin="20,0,0,0" Click="stopBtn_Click"/>
+                </StackPanel>
+                <Label Content="点击相应部件进行积分" HorizontalAlignment="Left" Margin="47,20,0,0" VerticalAlignment="Top" Width="324.876" FontSize="20"/>
+            </Grid>
+        </Viewbox>
+
+    </Grid>
+</Window>
