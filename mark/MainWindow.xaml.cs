@@ -147,6 +147,11 @@ namespace mark
             
         }
 
+        private void Label_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            System.Diagnostics.Process.Start(@"https://github.com/ysw0145/FllWordClassMarkCount");
+        }
+
 
 
 
