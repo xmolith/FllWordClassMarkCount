@@ -26,63 +26,63 @@
                 <Rectangle Fill="#00F4F4F5" HorizontalAlignment="Left" Height="100" Margin="37,254,0,0" Stroke="Black" VerticalAlignment="Top" Width="100" MouseLeftButtonDown="Rectangle_MouseLeftButtonDown">
                     <Rectangle.ContextMenu>
                         <ContextMenu>
-                            <MenuItem  x:Name="dooropen" Header="Opened" IsCheckable="True" Checked="checkcheck"/>
+                            <MenuItem  x:Name="dooropen" Header="已打开" IsCheckable="True" Checked="checkcheck"/>
                         </ContextMenu>
                     </Rectangle.ContextMenu>
                 </Rectangle>
                 <Rectangle Fill="#00F4F4F5" HorizontalAlignment="Left" Height="100" Margin="209.711,77.725,0,0" Stroke="Black" VerticalAlignment="Top" Width="100" MouseLeftButtonDown="Rectangle_MouseLeftButtonDown">
                     <Rectangle.ContextMenu>
                         <ContextMenu>
-                            <MenuItem  x:Name="search1" Header="moved" IsCheckable="True" Checked="checkcheck"/>
-                            <MenuItem  x:Name="search2" Header="moved-right-getter" IsCheckable="True" Checked="checkcheck" />
+                            <MenuItem  x:Name="search1" Header="推动" IsCheckable="True" Checked="checkcheck"/>
+                            <MenuItem  x:Name="search2" Header="推动且正确得到圆环" IsCheckable="True" Checked="checkcheck" />
                         </ContextMenu>
                     </Rectangle.ContextMenu>
                 </Rectangle>
                 <Rectangle Fill="#00F4F4F5" HorizontalAlignment="Left" Height="100" Margin="345.068,204,0,0" Stroke="Black" VerticalAlignment="Top" Width="100" MouseLeftButtonDown="Rectangle_MouseLeftButtonDown">
                     <Rectangle.ContextMenu>
                         <ContextMenu>
-                            <MenuItem  x:Name="shoot1" Header="shoot" IsCheckable="True" Checked="checkcheck"/>
-                            <MenuItem  x:Name="shoot2" Header="shoot-in" IsCheckable="True" Checked="checkcheck"/>
+                            <MenuItem  x:Name="shoot1" Header="射门" IsCheckable="True" Checked="checkcheck"/>
+                            <MenuItem  x:Name="shoot2" Header="射进" IsCheckable="True" Checked="checkcheck"/>
                         </ContextMenu>
                     </Rectangle.ContextMenu>
                 </Rectangle>
                 <Rectangle Fill="#00F4F4F5" HorizontalAlignment="Left" Height="100" Margin="282,343,0,0" Stroke="Black" VerticalAlignment="Top" Width="100" MouseLeftButtonDown="Rectangle_MouseLeftButtonDown">
                     <Rectangle.ContextMenu>
                         <ContextMenu>
-                            <MenuItem  x:Name="route" Header="finushed" IsCheckable="True" Checked="checkcheck"/>
+                            <MenuItem  x:Name="route" Header="完成" IsCheckable="True" Checked="checkcheck"/>
                         </ContextMenu>
                     </Rectangle.ContextMenu>
                 </Rectangle>
                 <Rectangle Fill="#00F4F4F5" HorizontalAlignment="Left" Height="100" Margin="445.5,339.5,0,0" Stroke="Black" VerticalAlignment="Top" Width="100" MouseLeftButtonDown="Rectangle_MouseLeftButtonDown">
                     <Rectangle.ContextMenu>
                         <ContextMenu>
-                            <MenuItem  x:Name="pencent1" Header="pull" IsCheckable="True" Checked="checkcheck"/>
+                            <MenuItem  x:Name="pencent1" Header="推" IsCheckable="True" Checked="checkcheck"/>
                         </ContextMenu>
                     </Rectangle.ContextMenu>
                 </Rectangle>
                 <Rectangle Fill="#00F4F4F5" HorizontalAlignment="Left" Height="100" Margin="588.5,411.5,0,0" Stroke="Black" VerticalAlignment="Top" Width="100" MouseLeftButtonDown="Rectangle_MouseLeftButtonDown">
                     <Rectangle.ContextMenu>
                         <ContextMenu>
-                            <MenuItem  x:Name="cloud" Header="finished" IsCheckable="True" Checked="checkcheck"/>
+                            <MenuItem  x:Name="cloud" Header="完成" IsCheckable="True" Checked="checkcheck"/>
                         </ContextMenu>
                     </Rectangle.ContextMenu>
                 </Rectangle>
                 <Rectangle Fill="#00F4F4F5" HorizontalAlignment="Left" Height="55" Margin="803.087,399.5,0,0" Stroke="Black" VerticalAlignment="Top" Width="59.5" MouseLeftButtonDown="Rectangle_MouseLeftButtonDown">
                     <Rectangle.ContextMenu>
                         <ContextMenu>
-                            <MenuItem  x:Name="commStudy" Header="get-it" IsCheckable="True" Checked="checkcheck"/>
+                            <MenuItem  x:Name="commStudy" Header="已得到" IsCheckable="True" Checked="checkcheck"/>
                         </ContextMenu>
                     </Rectangle.ContextMenu>
                 </Rectangle>
                 <Rectangle Fill="#00F4F4F5" HorizontalAlignment="Left" Height="55" Margin="801.087,338,0,0" Stroke="Black" VerticalAlignment="Top" Width="59.5" MouseLeftButtonDown="Rectangle_MouseLeftButtonDown">
                     <Rectangle.ContextMenu>
                         <ContextMenu>
-                            <MenuItem  x:Name="out1" Header="out" IsCheckable="True" Checked="checkcheck"/>
-                            <MenuItem  x:Name="out2" Header="out-in-right-way" IsCheckable="True" Checked="checkcheck"/>
+                            <MenuItem  x:Name="out1" Header="掉落" IsCheckable="True" Checked="checkcheck"/>
+                            <MenuItem  x:Name="out2" Header="正确掉落" IsCheckable="True" Checked="checkcheck"/>
                         </ContextMenu>
                     </Rectangle.ContextMenu>
                 </Rectangle>
-                <Rectangle Fill="#00F4F4F5" HorizontalAlignment="Left" Height="55" Margin="725,278,0,0" Stroke="Black" VerticalAlignment="Top" Width="59.5">
+                <Rectangle Fill="#00F4F4F5" HorizontalAlignment="Left" Height="55" Margin="725,278,0,0" Stroke="Black" VerticalAlignment="Top" Width="59.5" MouseLeftButtonDown="Rectangle_MouseLeftButtonDown" >
                     <Rectangle.ContextMenu>
                         <ContextMenu>
                             <MenuItem  x:Name="remote" Header="完成" IsCheckable="True" Checked="checkcheck"/>
@@ -93,15 +93,15 @@
                 <Rectangle Fill="#00F4F4F5" HorizontalAlignment="Left" Height="100" Margin="542.703,204,0,0" Stroke="Black" VerticalAlignment="Top" MouseLeftButtonDown="Rectangle_MouseLeftButtonDown" Width="100">
                     <Rectangle.ContextMenu>
                         <ContextMenu>
-                            <MenuItem  x:Name="block1" Header="block-in" IsCheckable="True" Checked="checkcheck"/>
-                            <MenuItem  x:Name="block2" Header="block-in-get-it" IsCheckable="True" Checked="checkcheck"/>
+                            <MenuItem  x:Name="block1" Header="块输入" IsCheckable="True" Checked="checkcheck"/>
+                            <MenuItem  x:Name="block2" Header="块输入且正确得到圆环" IsCheckable="True" Checked="checkcheck"/>
                         </ContextMenu>
                     </Rectangle.ContextMenu>
                 </Rectangle>
-                <Rectangle Fill="#00F4F4F5" HorizontalAlignment="Left" Height="100" Margin="725,173,0,0" Stroke="Black" VerticalAlignment="Top" Width="100" MouseLeftButtonDown="Rectangle_MouseLeftButtonDown" RenderTransformOrigin="0.371,0.475">
+                <Rectangle Fill="#00F4F4F5" HorizontalAlignment="Left" Height="100" Margin="725,173,0,0" Stroke="Black" VerticalAlignment="Top" Width="100" MouseLeftButtonDown="Rectangle_MouseLeftButtonDown" >
                     <Rectangle.ContextMenu>
                         <ContextMenu>
-                            <MenuItem  x:Name="rightSenser" Header="finished" IsCheckable="True" Checked="checkcheck"/>
+                            <MenuItem  x:Name="rightSenser" Header="完成" IsCheckable="True" Checked="checkcheck"/>
                         </ContextMenu>
                     </Rectangle.ContextMenu>
                 </Rectangle>
