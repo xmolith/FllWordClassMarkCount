@@ -127,11 +127,11 @@ namespace mark
 
         private void timestartBtn_Click(object sender, RoutedEventArgs e)
         {
-            timer = new DispatcherTimer();
-            timer.Interval = new TimeSpan(0, 0, 1);
+            timer = new DispatcherTimer(); //初始化timer
+            timer.Interval = new TimeSpan(0, 0, 1); //设置时间间隔TimeSpan(时, 分, 秒)
             startTime = DateTime.Now;
-            timer.Tick += new EventHandler(Timer_Tick);
-            timer.Start();
+            timer.Tick += new EventHandler(Timer_Tick); //委托
+            timer.Start(); //开始计时
 
         }
         void Timer_Tick(object send, EventArgs e)
